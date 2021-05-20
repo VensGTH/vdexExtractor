@@ -17,3 +17,8 @@ jobs:
       run: chmod +x ./make.sh
     - name: make check
       run: ./make.sh
+    - uses: actions/upload-artifact@v2
+      with:
+       name: Package
+       path: | 
+        bin/*
