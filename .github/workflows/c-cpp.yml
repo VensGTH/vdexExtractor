@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: make.sh
       run: chmod +x ./make.sh
     - name: make check
       run: ./make.sh
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4.4.0
       with:
        name: Package
        path: | 
